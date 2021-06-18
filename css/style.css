@@ -71,19 +71,18 @@ body {
   color: #000000;
   text-transform: uppercase;
   background-color: transparent;
-  background-image: -o-linear-gradient(top, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
-  background-image: linear-gradient(to bottom, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
+  background-color: #f0c52e;
   background-repeat: no-repeat;
   background-position: 0 0;
   border: none;
   cursor: pointer;
+  transition: all 0.15s linear;
 }
 
 .button:hover,
 .button:active {
-  background-image: -o-linear-gradient(top, #f0c52e, #f0c52e);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f0c52e), to(#f0c52e));
-  background-image: linear-gradient(to bottom, #f0c52e, #f0c52e);
+  background-color: #fde385;
+  transition: all 0.1s linear;
 }
 
 .button:active {
@@ -139,6 +138,7 @@ body {
 .item-submenu a:hover,
 .item-submenu a:focus {
   opacity: 0.6;
+  transition: all 0.1s ;
 }
 
 .header .logo:active,
@@ -429,12 +429,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  
 }
 
 .main-nav-list .submenu-title {
   position: relative;
   margin-right: auto;
   padding-right: 32px;
+  
 }
 
 .main-nav-list .submenu-title:hover,
@@ -474,6 +476,7 @@ body {
   padding: 20px 460px 20px 60px;
   background-color: #f7e296;
   list-style-type: none;
+  transition: all 0.2s ;
 }
 
 .submenu-list a {
@@ -483,6 +486,7 @@ body {
   width: 100%;
   line-height: 36px;
   color: #000000;
+  transition: all 0.2s ;
 }
 
 .submenu-list li {
@@ -497,6 +501,7 @@ body {
 .submenu-list a:hover,
 .submenu-list a:focus {
   opacity: 0.6;
+  transition: all 0.1s linear;
 }
 
 .submenu-list a:active {
@@ -727,6 +732,7 @@ body {
   align-items: center;
   height: 160px;
   background-color: rgba(240, 197, 46, 0.5);
+  transition: all 0.1s;
 }
 
 .popular-img-wrapper.vertical-align-bottom {
@@ -1870,7 +1876,7 @@ body {
   flex-direction: column;
   width: 100%;
   height: 380px;
-  background-color: rgba(238, 238, 238, 0.7);
+  background-color: rgba(255, 255, 255, 0.5);
   visibility: hidden;
 }
 
